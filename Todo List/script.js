@@ -25,7 +25,7 @@ document.addEventListener("keydown", function (e) {
 
 document.addEventListener("click", function (e) {
   if (e.target.tagName === "LI") {
-    e.target.classList.add("checked");
+    e.target.classList.toggle("checked");
     saveData();
   } else if (e.target.tagName === "SPAN") {
     let listItem = e.target.parentElement; // Get the parent <li>
